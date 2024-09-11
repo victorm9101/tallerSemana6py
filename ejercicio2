@@ -1,1 +1,12 @@
 
+# Ejercicio 2: Cálculo básico de salario
+
+empleados = 1897
+salario_base = 1000000  # Salario base
+seguridad_social = salario_base * 0.10  # Descuento del 10%
+
+for i in range(1, empleados + 1):
+    ventas = 500000  # Usamos un valor fijo para las ventas
+    comision = ventas * 0.05  # Comisiones del 5% sobre ventas
+    salario_total = salario_base + comision - seguridad_social
+    print(f"Empleado {i}: Salario total = {salario_total}")

@@ -1,1 +1,13 @@
+# Ejercicio 1: Generar una serie sin el número 13
+a = 5
+b = 8
+numeros = [a, b]  # Lista que contiene los primeros dos números
 
+while len(numeros) < 100:  # Queremos 100 números
+    nuevo_numero = a + b
+    if nuevo_numero != 13:  # No incluir el número 13
+        numeros.append(nuevo_numero)
+    a = b
+    b = nuevo_numero
+
+print(numeros)  # Mostrar la lista con los números

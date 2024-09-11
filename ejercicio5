@@ -1,1 +1,16 @@
 
+# Ejercicio 4: Diagnóstico de leucemia
+
+for i in range(1, 804):
+    puntaje = int(input(f"Ingrese el puntaje del paciente {i}: "))
+    
+    if puntaje < 10:
+        print("No tiene leucemia")
+    elif puntaje <= 40:
+        print("Nivel bajo de leucemia")
+    elif puntaje <= 69:
+        print("Nivel moderado de leucemia")
+    elif puntaje <= 100:
+        print("Nivel grave de leucemia")
+    else:
+        print("Puntaje inválido")
